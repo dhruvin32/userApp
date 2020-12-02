@@ -1,0 +1,10 @@
+{
+    "/masterdata/*":{
+        "target" : "https://qa.mosip.net",
+        "secure" : true,
+        "chaneOrigin" : true,
+        "pathRewrite" : {
+            "^/masterdata" : ""
+        } 
+    }
+}

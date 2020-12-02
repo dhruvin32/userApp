@@ -1,0 +1,38 @@
+<h3>user works!</h3>
+<h1>{{status}}</h1>
+    
+<p>{{tempName}}</p>
+<div *ngIf = "users">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Status</td>
+        </tr>
+        <div *ngFor = "let user of users">
+            <tr>
+                <td>
+                    <span>{{user.firstName}}</span>
+                </td>
+                <td>
+                    <span>{{user.addedStatus}}</span>
+                </td>
+            </tr>
+        </div>
+    </table>   
+    
+</div>
+
+
+    <div>
+      
+        Name
+        <!--input #firstName id="firstName" name="firstName" type="text" NgModel-->
+      <!--input #firstName (keyup.enter)="onAdd(firstName.value)"
+      (blur)="onAdd(firstName.value); firstName.value='' " -->
+      <!--input #textbox type="text" [(ngModel)] = "tempName" required/-->
+      <input #textbox required>
+
+    
+  
+        <button class="button" (click)="onAdd(textbox.value)">Add</button>
+    </div>
