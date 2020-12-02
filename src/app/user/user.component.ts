@@ -34,7 +34,7 @@ export class UserComponent implements OnInit {
     });*/
     this.registerToEvents(this.connectionService);
     this.users = this.userService.getItems();
-    this.tempName = JSON.stringify(this.userService.getMasterData());
+    //this.tempName = JSON.stringify(this.userService.getMasterData());
   }
 
 
